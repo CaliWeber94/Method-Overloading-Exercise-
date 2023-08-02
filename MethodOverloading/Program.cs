@@ -6,12 +6,12 @@
         {
                            
 
-            Add(2,2);
-            Add(3m, 3m);
-            Add(4, 5, true);
-            Console.WriteLine(Add(2,2));
-            Console.WriteLine(Add(3m,3m));
-            Console.WriteLine(Add(4,5, true));
+             var intAdd = Add(2,2);
+           var decimalAdd = Add(3m, 3m);
+           var dollarsAdd = Add(0, 1, true);
+            Console.WriteLine(intAdd);
+            Console.WriteLine(decimalAdd);
+            Console.WriteLine(dollarsAdd);
         }
         public static int Add(int x, int y)
         {
@@ -30,11 +30,11 @@
             {
                 return $"{sum} dollars";
             }
-            else if (ischecked == true && sum >=5)
+            else if (ischecked == true && sum ==1)
             {
-                return $"{sum} dollars";
+                return $"{sum} dollar";
             }
-            else if (ischecked == true && sum <16)
+            else if (ischecked == true && sum <1)
             {
                 return $"{sum} dollars";
             }
